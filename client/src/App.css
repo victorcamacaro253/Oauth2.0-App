@@ -1,0 +1,14 @@
+#root {
+  
+}
+
+
+body {
+  margin: 0; /* Asegúrate de que no haya margen */
+  padding: 0; /* Asegúrate de que no haya padding */
+  display: flex;
+  flex-direction: column; /* Asegúrate de que el contenido se apile verticalmente */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: hwb(0 100% 0%); /* Color de fondo */
+}

@@ -1,0 +1,167 @@
+div.register{
+    background: rgba(255,255,255,0.45);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 10px;
+border: 1px solid rgba(225, 207, 207, 0.225);
+margin: 2rem auto;
+padding: 2rem;
+text-align: center;
+max-width: 380px;
+max-height: 120vh;
+
+}
+
+
+div.auth:hover {
+    background: rgba(252, 252, 251, 0.45); /* Fondo un poco más claro al hacer hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al hacer hover */
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+.form-login{
+
+
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    
+}
+
+/* Estilos para las etiquetas */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+/* Estilos para los campos de entrada */
+div.register input[type="email"],
+div.register input[type="password"],
+div.register input[type="text"],
+div.register input[type="file"],
+div.register input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%; /* Asegúrate de que los inputs ocupen todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilos para el botón de inicio de sesión */
+button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los mensajes de error */
+p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+/* Estilos para los botones de redes sociales */
+.media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.media button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-button {
+    background-color: #db4437;
+    color: white;
+}
+
+.google-button:hover {
+    background-color: #c13526;
+}
+
+.twitter-button {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.twitter-button:hover {
+    background-color: #0d95e8;
+}
+
+.github-button {
+    background-color: #333;
+    color: white;
+}
+
+.github-button:hover {
+    background-color: #444;
+}
+
+.facebook-button {
+    background-color: #4267b2;
+    color: white;
+}
+
+.facebook-button:hover {
+    background-color: #365e9e;
+}
+
+
+.password-container {
+    display: flex;
+    position: relative;
+}
+
+
+
+.password-container,
+.email-container { /* Assuming you have a class for each container */
+  display: flex; /* Turn the container into a flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: flex-start; /* Align items to the start of the container (left in this case) */
+}
+
+.password-container label,
+.email-container label {
+  margin-bottom: 5px; /* Add some space between the label and input */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 5%; /* Ajusta este valor según sea necesario */
+    top: 58%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
